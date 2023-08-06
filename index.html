@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown Previewer</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="col-md-6" id="text-editor">
+        <div class="toolbar">
+          <h4>(<i class="fa-solid fa-guarani-sign fa-spin"></i>) Editor</h4>
+          <!-- <div id="maximise">
+            <i class="fa-solid fa-maximize" id="maximize"></i>
+          </div> -->
+          <div id="minimise">
+            <i
+              class="fa-solid fa-down-left-and-up-right-to-center short"
+              id="short"
+            ></i>
+          </div>
+        </div>
+        <textarea id="editor" class="form-control" rows="10"></textarea>
+      </div>
+      <div class="col-md-6 box" id="box">
+        <div class="toolbar">
+          <h4>(<i class="fa-solid fa-guarani-sign fa-spin"></i>) Preview</h4>
+          <!-- <p> -->
+          <i class="fa-solid fa-maximize" id="pre_max"></i>
+          <i
+            class="fa-solid fa-down-left-and-up-right-to-center short"
+            id="center"
+          ></i>
+          <!-- </p> -->
+        </div>
+        <div id="preview" class="border p-3"></div>
+      </div>
+    </div>
+
+    <!-- Marked library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.7/marked.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/6.0.0/marked.min.js"></script> -->
+    <script src="index.js"></script>
+  </body>
+</html>

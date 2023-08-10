@@ -48,7 +48,7 @@ min_maxBtn.onclick = () => {
     miniBtn.onclick = () => {
       if (editor.style.height === "100vh" && box.style.display === "none") {
         miniBtn.style.display = "block";
-        editor.style.height = "30vh";
+        editor.style.height = "38vh";
       }
     };
   } else {

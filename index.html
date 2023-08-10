@@ -20,28 +20,28 @@
       <div class="col-md-6" id="text-editor">
         <div class="toolbar">
           <h4>(<i class="fa-solid fa-guarani-sign fa-spin"></i>) Editor</h4>
-          <!-- <div id="maximise">
-            <i class="fa-solid fa-maximize" id="maximize"></i>
-          </div> -->
-          <div id="minimise">
-            <i
-              class="fa-solid fa-down-left-and-up-right-to-center short"
-              id="short"
-            ></i>
+          <div class="min-max" id="min-max">
+            <div class="maximise" id="maximise">
+              <i class="fa-solid fa-maximize"></i>
+            </div>
+            <div class="minimise" id="minimise">
+              <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+            </div>
           </div>
         </div>
         <textarea id="editor" class="form-control" rows="10"></textarea>
       </div>
-      <div class="col-md-6 box" id="box">
+      <div class="col-md-6" id="box">
         <div class="toolbar">
           <h4>(<i class="fa-solid fa-guarani-sign fa-spin"></i>) Preview</h4>
-          <!-- <p> -->
-          <i class="fa-solid fa-maximize" id="pre_max"></i>
-          <i
-            class="fa-solid fa-down-left-and-up-right-to-center short"
-            id="center"
-          ></i>
-          <!-- </p> -->
+          <div class="min-max" id="min-max2">
+            <div class="maximise" id="maximise2">
+              <i class="fa-solid fa-maximize"></i>
+            </div>
+            <div class="minimise" id="minimise2">
+              <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+            </div>
+          </div>
         </div>
         <div id="preview" class="border p-3"></div>
       </div>
@@ -49,7 +49,6 @@
 
     <!-- Marked library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.7/marked.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/6.0.0/marked.min.js"></script> -->
     <script src="index.js"></script>
   </body>
 </html>

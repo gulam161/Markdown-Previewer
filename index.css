@@ -38,11 +38,17 @@ body {
   color: rgb(117, 228, 191);
 }
 #maximise {
-  /* display: block; */
+  display: block;
 }
 #minimise {
-  /* disp/lay: none; */
+  display: none;
 }
-.box {
+#maximise2 {
+  display: block;
+}
+#minimise2 {
+  display: none;
+}
+#box {
   width: 70%;
 }

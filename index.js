@@ -34,13 +34,51 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-const maximiseBTN = document.getElementById("maximise");
-const minimiseBtn = document.getElementById("minimise");
-maximiseBTN.onclick = () => {
-  let btnStyle = maximiseBTN.style.display;
-  if (btnStyle === "" || btnStyle === "block") {
-    btnStyle = "none";
+const min_maxBtn = document.getElementById("min-max");
+const maxBtn = document.getElementById("maximise");
+const miniBtn = document.getElementById("minimise");
+const editor = document.getElementById("editor");
+
+min_maxBtn.onclick = () => {
+  if (maxBtn.style.display === "block" || miniBtn.style.display === "none") {
+    maxBtn.style.display = "none";
+    miniBtn.style.display = "block";
+    editor.style.height = "100vh";
+    box.style.display = "none";
+    miniBtn.onclick = () => {
+      if (editor.style.height === "100vh" && box.style.display === "none") {
+        miniBtn.style.display = "block";
+        editor.style.height = "30vh";
+      }
+    };
   } else {
-    btnStyle = "block";
+    maxBtn.style.display = "block";
+    miniBtn.style.display = "none";
+    box.style.display = "block";
+  }
+};
+
+const min_maxBtn2 = document.getElementById("min-max2");
+const maxBtn2 = document.getElementById("maximise2");
+const miniBtn2 = document.getElementById("minimise2");
+const box = document.getElementById("box");
+const text_editor = document.getElementById("text-editor");
+
+min_maxBtn2.onclick = () => {
+  if (maxBtn2.style.display === "block" || miniBtn2.style.display === "none") {
+    maxBtn2.style.display = "none";
+    miniBtn2.style.display = "block";
+    box.style.height = "100vh";
+    text_editor.style.display = "none";
+    miniBtn2.onclick = () => {
+      if (box.style.height === "100vh" && box.style.display === "none") {
+        miniBtn2.style.display = "block";
+        box.style.height = "70vh";
+      }
+    };
+  } else {
+    maxBtn2.style.display = "block";
+    miniBtn2.style.display = "none";
+    text_editor.style.display = "block";
   }
 };
